@@ -1,4 +1,4 @@
-techbire License
+MIT License
 
 Copyright (c) 2023 Ansh Gupta
 
