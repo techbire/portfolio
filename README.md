@@ -1,6 +1,6 @@
 # Portfolio Website
 
-![Project Image/Logo]
+
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -67,7 +67,5 @@ We welcome contributions from the community. To contribute, please follow the gu
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
-## Acknowledgements
-- [List any external libraries, resources, or inspirations]
 
 Feel free to customize this template based on your project's specific details, add or remove sections as needed, and provide accurate links and information. Make sure to replace the placeholders with your actual project details.
