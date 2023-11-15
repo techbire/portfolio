@@ -10,9 +10,7 @@
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 Welcome to the Portfolio Website repository! This project is a personal portfolio website built with HTML, CSS, SCSS, and JS. It serves as a platform to showcase your skills, projects, and achievements in a visually appealing and interactive manner.
@@ -61,8 +59,6 @@ To run the Portfolio Website locally, follow these steps:
 |-- ...
 ```
 
-## Contributing
-We welcome contributions from the community. To contribute, please follow the guidelines outlined in the [Contributing](CONTRIBUTING.md) document.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
