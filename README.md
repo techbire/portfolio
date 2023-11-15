@@ -25,7 +25,7 @@ Welcome to the Portfolio Website repository! This project is a personal portfoli
 - **Smooth Animations:** Utilizes JavaScript for smooth transitions and animations.
 
 ## Demo
-[View Demo](#) [Add link to your live demo or hosted project]
+[https://techbire.github.io/portfolio/](#)
 
 ## Installation
 To run the Portfolio Website locally, follow these steps:
