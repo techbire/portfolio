@@ -9,18 +9,16 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
 - [License](#license)
 
 ## Introduction
-Welcome to the Portfolio Website repository! This project is a personal portfolio website built with HTML, CSS, SCSS, and JS. It serves as a platform to showcase your skills, projects, and achievements in a visually appealing and interactive manner.
+Welcome to the Portfolio Website repository! This project is a personal portfolio website built with HTML and CSS. It serves as a platform to showcase your skills, projects, and achievements in a visually appealing and interactive manner.
 
 ## Features
 - **Responsive Design:** Ensures an optimal viewing experience across various devices.
 - **Project Showcase:** Highlight your projects with project descriptions, images, and live demos.
 - **Skills Section:** Showcase your skills and proficiency in various technologies.
 - **Contact Form:** An interactive form for visitors to reach out to you.
-- **Smooth Animations:** Utilizes JavaScript for smooth transitions and animations.
 
 ## Demo
 [https://techbire.github.io/portfolio/](#)
@@ -33,27 +31,24 @@ To run the Portfolio Website locally, follow these steps:
 
 ## Usage
 1. Customize the content in `index.html` to include your personal information, projects, and skills.
-2. Modify the styles in the `scss` folder to match your preferred visual design.
-3. Update the JavaScript in the `js` folder to add or modify functionality.
+2. Modify the styles in the `css` folder to match your preferred visual design.
 4. Add your own images to the `img` folder for project showcases.
 5. Test the contact form by integrating it with your preferred backend service.
 
 ## Technologies Used
 - HTML
 - CSS
-- SCSS
-- JavaScript
+
 
 ## Project Structure
 ```
 /portfolio-website
 |-- index.html
 |-- styles
-|   |-- main.css
-|   |-- main.scss
-|-- js
-|   |-- main.js
+|   |-- main.cs
 |-- img
+|   |-- pic1.jpg
+|   |-- pic2.jpg
 |   |-- project1.jpg
 |   |-- project2.jpg
 |-- ...
