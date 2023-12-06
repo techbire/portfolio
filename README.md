@@ -15,9 +15,9 @@ Welcome to the Portfolio Website repository! This project is a personal portfoli
 
 ## Features
 - **Responsive Design:** Ensures an optimal viewing experience across various devices.
-- **Project Showcase:** Highlight your projects with project descriptions, images, and live demos.
-- **Skills Section:** Showcase your skills and proficiency in various technologies.
-- **Contact Form:** An interactive form for visitors to reach out to you.
+- **Project Showcase:** Highlight my projects with project descriptions, images, and live demos.
+- **Skills Section:** Showcase myskills and proficiency in various technologies.
+- **Contact Form:** An interactive form for visitors to reach out to me.
 
 ## Demo
 [https://techbire.github.io/portfolio/](#)
