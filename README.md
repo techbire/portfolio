@@ -1,7 +1,6 @@
 # Portfolio Website
 
 
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
