@@ -11,6 +11,12 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
  }
+ #icon{
+    width:30px;
+    cursor:pointer;
+    margin-left: 4rem;
+    padding-top: 2px;
+ }
  :root {
      --bg-color: #fff;
      --seconde-bg-color: rgba(201, 207, 220, 0.933);
@@ -19,7 +25,11 @@
      --main-color: #fd4766;
      --shadow-color: #808080;
  }
-
+.dark-theme{
+--text-color:white;
+    --bg-color:black;
+    --seconde-bg-color: rgb(50,45,33);
+}
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -94,15 +104,15 @@ section{
     font-weight: 700;
 }
 
-
-.home-content .title {
-    color: #0a0a0a;
-    font-size: 15px;
+      #text-container {
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 4px;
     display: inline-block;
     
-    background: linear-gradient(
+      background: linear-gradient(
       120deg,
       #1c99fe 20.69%,
       #7644ff 50.19%,
@@ -110,8 +120,21 @@ section{
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+    }
 
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    .border {
+      border-right: 2px solid #ffffff;
+      animation: typing 2s steps(40, end);
+    }
 
 .home-content h1 {
     font-size: 4.6rem;
@@ -177,21 +200,17 @@ span{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    /* background: var(--seconde-bg-color); */
 }
-.about-img{
-    width: 35vw;
-}
+
 .about-img img{
-    width: 32vw;
+    width: 28vw;
     transition: 0.3s ease;
-    border-radius: 8%;
-   
-   box-shadow: 12px 12px 6px 
+   box-shadow: 3px 8px 6px 
    #00000075;
-   border-radius: 12%;
+   border-radius: 2%;
  
 }
+
 
 .about-img img:hover{
     transform: scale(1.05);
@@ -213,42 +232,53 @@ span{
     margin: 1rem 3rem 3rem 0;
 }
 
-.tab {
-    overflow: hidden;
-}
+.tab-titles{
+    display:flex;
+    margin:20px 0 40px;
 
-.tab input {
-    display: none;
 }
+.tab-links{
 
-.tab ul{font-size: medium;}
-.tab label {
-  
-    float: left;
-    border: 1px solid #ffffff;
-    padding: 10px 15px;
+    margin-right: 50px;
+    font-size:18px;
+    font-weight: 500;
     cursor: pointer;
-    transition: 0.3s;
+    position: relative;
 }
 
-.tab input:checked + label {
-    background-color:#ccc;
+
+.tab-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background: #fd4766;;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+.tab-contents ul li{
+    /* list-style: none; */
+    margin: 10px 0 ;
+}
+.tab-contents ul li{
+    font-size: small;
 }
 
-.tabcontent {
+.tab-contents ul li span{
+    color:#ef306d;
+    font-size:medium;
+}
+.tab-contents{
     display: none;
-    padding: 20px;
-    border: 1px;
-    clear: both;
 }
-
-
-#tab1:checked ~ #skills,
-#tab2:checked ~ #experience,
-#tab3:checked ~ #education {
+.tab-contents.active-tab{
     display: block;
 }
-/***********************services****************/
+/**********************services****************/
 .services h2{
     margin-bottom: 5rem;
 }
@@ -314,17 +344,18 @@ span{
 }
 .portfolio-card h3 {
     font-size: 2rem;
+    color:  var(--text-color);
 }
 .portfolio-card img {
     width: 80%;
     height: 50%;
     margin: 2rem 0;
-    box-shadow: 10px 10px 5px 
-    #c9cfdcee;
+
 }
 
 .portfolio-details p{
    font-size: larger;
+   color:  var(--text-color);
 }
 
  .portfolio-card .btn{
@@ -368,6 +399,9 @@ margin-bottom: 10px;
     margin-top: 2rem;
     cursor: pointer;
 }
+
+
+
 /******footer********/
 .footer{
     display: flex;
@@ -379,6 +413,7 @@ margin-bottom: 10px;
 }
 .footer-text p{
     font-size: 1.6rem;
+    color:  var(--text-color);
 }
 
 .footer-iconTop a{
@@ -416,7 +451,7 @@ margin-bottom: 10px;
     }
 }
 
-@media (max-width:768px){
+@media (max-width:600px){
     #menu-icon{
         display: block;
     }
@@ -436,3 +471,41 @@ margin-bottom: 10px;
         margin: 3rem 0;
     }
 }
+
+
+@media (max-width:1048px){
+.header{
+    font-size: 32px;
+    padding-left:60px;
+}
+.navbar a {
+    margin-right:20x; 
+    font-size:17px ;
+}
+}
+
+@media(max-width:909px){
+    nav #icon{
+        display:block;
+
+    }
+    .navbar a{ position: fixed;
+        width:100px;
+        height: 100vh;
+        top:80px;
+        left:0;
+        text-align:center;
+        display:block;
+        margin:50px 0;
+        line-height:30px;
+        font-size:20px;
+        a.active,a:hover{
+        border:none;
+        }
+        nav a.show{
+            left:0;
+            
+        }
+
+
+    }}

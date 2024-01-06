@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ansh's Portfolio</title>
 
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -26,18 +25,25 @@
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
             <a href="https://www.techbire.blogspot.com">Blog</a>
+            <img src="assets/moon.png" id="icon">
         </nav>
 
-        <a href="#contact" class="btn">Contact Me</a>
+
 
     </header>
     
 
     <!-- home section -->
     <section class="home" id="home">
-        <div class="home-content">
-            <span class="title">a tech enthusiast</span>
-        <h1>Hello, I’m <span>Ansh</span></h1>
+        <div class="home-content" data-aos="fade-down">
+    
+            <h1>Hello, I’m <span>Ansh</span></h1>
+            <title>Text Typing Effect</title>
+<body>
+  <div id="text-container" class="border"></div>
+</body>
+<br>
+<br>
             <p>
 
                 I am working on developing professional and visually engaging web solutions, leveraging my strong programming skills in Python and C++. I have completed some impactful tech projects while also nurturing my passion for technology that began in 7th grade. Currently pursuing a B.Tech in CSE at Lovely Professional University, I am open to exciting opportunities in professional projects, research, and connecting with industry professionals. 
@@ -59,7 +65,7 @@
             </div>
         </div>
 
-        <div class="home-img">
+        <div class="home-img"data-aos="fade-down">
             <img src="assets/pic1.png" alt="">
         </div>
     </section>
@@ -67,62 +73,59 @@
     
     <!-- About section -->
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="assets/pic2.png" alt="">
+        <div class="about-img"data-aos="fade-left">
+            <img src="assets/x.jpg" alt="">
         </div>
 
-        <div class="about-content">
+        <div class="about-content"data-aos="zoom-in-up">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Programmer <span>&</span> Web Developer</h3>
             <p>I possess expertise as a Web Developer and have a deep enthusiasm for technology
                 that are both aesthetically pleasing and highly functional.
             I am an expert in designing user-friendly and attractive interfaces. I am
             proficient in a range of programming language including Python and C++. And have
             experience with clients across a variety of industries.</p>
-            <div class="tab">
-                <input type="radio" id="tab1" name="tab" checked>
-                <label for="tab1"><h1>Skills</h1></label>
+           
+            <div class="tab-titles"data-aos="fade-left">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+            <p class="tab-links"onclick="opentab('education')">Education</p>
+            <p class="tab-links"onclick="opentab('certification')">Certification</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>MERN Stack Developer</span><br>Building Website</li>
+                <li><span>Python and C++</span><br>Programming Languages </li>
+       
+
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>Dailyhunt</span><br>Tech Content Writer<br>2020-2021</li>
+                <li><span>Techbire</span><br>Founder | Blogger<br>2017-2020</li>
+      
+
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2023-Present</span><br>Lovely Professional University <br>Phagwara, Punjab</li>
+
+        </div>
+        <div class="tab-contents" id="certification">
+            <ul>
+                <li><span>Google</span><br>Crash Course on Python<br>Issued Oct 2023</li>
+                <li><span>freeCodeCamp</span><br>Responsive Web Design<br>Issued Sep 2023</li>
+ 
+                
             
-                <input type="radio" id="tab2" name="tab">
-                <label for="tab2"><h1>Experience</h1></label>
-            
-                <input type="radio" id="tab3" name="tab">
-                <label for="tab3"><h1>Education</h1></label>
-            
-                <div id="skills" class="tabcontent">
-                    <h3>Skills</h3>
-                    <ul>
-                                <li><span>Full MERN Stack Developer</span><br>Building Website</li>
-                                <li><span>Python & C++</span><br>Language</li>
-                            </ul>
-                </div>
-            
-                <div id="experience" class="tabcontent">
-                    <h3>Experience</h3>
-                    <ul>
-                                
-                                <li><span>2020-2021</span><br>Tech Content Writer @ Dailyhunt <br> </li>
-                                <li><span>2017-2020</span><br>Founder | Blogger @ Techbire<br></li>
-                            </ul>
-                </div>
-            
-                <div id="education" class="tabcontent">
-                    <h3>Education</h3>
-                    <ul>
-                                <li><span>2023-Present</span><br>Lovely Professional University <br>Phagwara, Punjab
-                                    </li>
-                            </ul>
-                </div>
-            </div>
         </div>
     </section>
-
+   
     <!-- Services section -->
     <section class="services" id="services">
         <h2 class="heading">My <span>Services</span></h2>
         <div class="services-container">
 
-            <div class="services-box">
+            <div class="services-box" data-aos="slide-right">
                 <i class="bx bx-code-alt"></i>
                 <h3>Frontend Development</h3>
                 <p>Specialize in crafting the visual and interactive elements that users see and interact with on the front end.
@@ -130,14 +133,14 @@
                 
             </div>
 
-            <div class="services-box">
+            <div class="services-box"data-aos="fade-right">
                 <i class="bx bx-mobile-alt"></i>
                 <h3>Responsive Web Design</h3>
                 <p>Specialize in designing websites that not only scale beautifully but also offer a consistent and Responsivness is about creating websites that look great from desktops to smartphones. </p>
                 
             </div>
 
-            <div class="services-box">
+            <div class="services-box" data-aos="fade-left">
                 <i class='bx bxl-python'></i>
                 <h3>Python Development</h3>
                 <p>Learning to build the logic, and create project that used in real life for like- BMI and Tip calculator and Remainder app.
@@ -151,12 +154,12 @@
     <!-- projects section -->
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Last <span>Projects</span></h2>
-        <div class="portfolio-container">
+        <div class="portfolio-container" data-aos="fade-right">
     
             <div class="portfolio-card">
                 
                 <img  src="assets/project1.png" alt="" >
-                <div class="portfolio-details">
+                <div class="portfolio-details"data-aos="fade-right">
                 <h3>AGRICULTURE- <span>WEBSITE</span></h3>
                 <p>The Sustainable Agriculture Planner is a website using HTML,CSS and JS. It is designed to support sustainable farming practices. It provides a comprehensive set of features to assist farmers and stakeholders in planning, managing resources efficiently, and promoting sustainable agricultural development.</p>
                 </div>
@@ -165,8 +168,8 @@
 
             <div class="portfolio-card">
                 
-                <img src="assets/project2.png" alt="">
-                <div class="portfolio-details">
+               <img src="assets/project2.png" alt="" data-aos="fade-left">
+                <div class="portfolio-details"data-aos="fade-left">
                 <h3>KBC: THE QUIZ <span>GAME</span></h3>
                 <p>Successfully completed the KBC: The Quiz Game project, infused with Amitabh Bachchan Sir's voice. This project showcases a wide range of Python's topics, including lists, conditionals, functions, and the Pygame library. The incorporation of Amitabh Bachchan's voice adds an engaging and authentic touch to the game, making it a standout creation.</p>
                 </div>
@@ -177,7 +180,7 @@
 
         <!-- contact info section -->
         <section class="contact" id="contact">
-            <h2 class="heading"> Contact <span>Me <i class="bx bx-heart"></i></span></h2>
+            <h2 class="heading"> Contact <span>Me <i class='bx bx-message-dots'></i></span></h2>
 
             <form action="https://formspree.io/f/mqkvvpjv"
             method="POST">
@@ -193,6 +196,8 @@
         </section>    
 
 
+ 
+
         
 
 <!--Footer section -->
@@ -207,6 +212,10 @@
     </footer>
 
    
-
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
