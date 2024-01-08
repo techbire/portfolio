@@ -290,6 +290,8 @@ span{
     transition: ease-in-out 0s;
     flex-wrap: wrap;
     display: flex;
+    background: var(--seconde-bg-color);
+
 }
 .services {    
     text-align:center;
@@ -300,6 +302,7 @@ span{
 
 .services-box{
     padding-left: 24%;
+  
 }
 
 .box img{
@@ -324,7 +327,7 @@ transition: 0.3s ease;
 transform: scale(1.05);
 }
 
-
+.box b{color:  var(--text-color);}
 
 /***********portfolio****************/
 .portfolio h2 {
