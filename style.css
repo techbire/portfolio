@@ -278,40 +278,52 @@ span{
 .tab-contents.active-tab{
     display: block;
 }
-/**********************services****************/
-.services h2{
-    margin-bottom: 5rem;
-}
-.services-container{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+/**********************skills****************/
+
+
+.box{
+    background-color: rgba(201, 207, 220, 0.933);
+    padding: 23px;
+    border-radius: 5px;
+    width: 600px; /* Adjust the width as needed */
+    margin: 35px;
+    transition: ease-in-out 0s;
     flex-wrap: wrap;
-    gap: 2rem;
+    display: flex;
 }
-.services-container .services-box{
-    flex: 1 1 30rem;
-    background: var(--seconde-bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid var(--bg-color);
-   
+.services {    
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
-.services-container .services-box:hover{
-    border: .2rem solid var(--main-color);
-    transform: scale(1.02);}
-.services-box i{
-    font-size: 6rem;
-    color: var(--main-color);
+
+.services-box{
+    padding-left: 24%;
 }
-.services-box h3{
-    font-size: 2.6rem;
+
+.box img{
+transition: 0.3s ease;
+width: 50px; /* Adjust the width as needed */
+height: 50px;
+
+
 }
-.services-box p {
-    font-size: 1.6rem;
-    margin: 2rem 2rem 3rem;
+
+.box img:hover{
+    transform: scale(1.22);
+
 }
+
+ 
+.box{
+transition: 0.3s ease;
+}
+    
+.box:hover{
+transform: scale(1.05);
+}
+
 
 
 /***********portfolio****************/
@@ -484,28 +496,3 @@ margin-bottom: 10px;
 }
 }
 
-@media(max-width:909px){
-    nav #icon{
-        display:block;
-
-    }
-    .navbar a{ position: fixed;
-        width:100px;
-        height: 100vh;
-        top:80px;
-        left:0;
-        text-align:center;
-        display:block;
-        margin:50px 0;
-        line-height:30px;
-        font-size:20px;
-        a.active,a:hover{
-        border:none;
-        }
-        nav a.show{
-            left:0;
-            
-        }
-
-
-    }}
