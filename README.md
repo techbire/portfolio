@@ -34,24 +34,6 @@ To run the Portfolio Website locally, follow these steps:
 4. Add your own images to the `img` folder for project showcases.
 5. Test the contact form by integrating it with your preferred backend service.
 
-## Technologies Used
-- HTML
-- CSS
-
-
-## Project Structure
-```
-/portfolio-website
-|-- index.html
-|-- styles
-|   |-- main.cs
-|-- img
-|   |-- pic1.jpg
-|   |-- pic2.jpg
-|   |-- project1.jpg
-|   |-- project2.jpg
-|-- ...
-```
 
 
 ## License
