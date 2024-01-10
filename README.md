@@ -50,6 +50,4 @@ Include screenshots showcasing different sections and features of your website.
 
 For any inquiries or feedback, feel free to reach out to me at anshtechnical@gmail.com
 
----
 
-```
