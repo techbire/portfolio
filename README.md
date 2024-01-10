@@ -1,7 +1,7 @@
 # Ansh's Portfolio Website
 
-![DAY-MODE](Screenshot-day.png)
-![NIGHT-MODE](Screenshot-night.png)
+![DAY-MODE](assets/Screenshot-day.png)
+![NIGHT-MODE](assets/Screenshot-night.png)
 
 ## Overview
 
