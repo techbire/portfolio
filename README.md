@@ -1,8 +1,7 @@
 # Ansh's Portfolio Website
 
 ## Demo
-
-[Watch the project demo on YouTube]([https://www.youtube.com/watch?v=cmkO_rFmAUk])
+[Watch the project demo on YouTube](https://www.youtube.com/watch?v=cmkO_rFmAUk)
 
 ![DAY-MODE](assets/Screenshot-day.png)
 ![NIGHT-MODE](assets/Screenshot-night.png)
