@@ -1,43 +1,55 @@
-# Portfolio Website
+# Ansh's Portfolio Website
 
+![DAY-MODE](Screenshot-day.png)
+![NIGHT-MODE](Screenshot-night.png)
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [License](#license)
+## Overview
 
-## Introduction
-Welcome to the Portfolio Website repository! This project is a personal portfolio website built with HTML and CSS. It serves as a platform to showcase your skills, projects, and achievements in a visually appealing and interactive manner.
+Welcome to my personal portfolio website repository! This project is a showcase of my skills and projects, built using HTML, CSS, and JavaScript. It features a fully responsive contact page with Formspree integration, a dark mode for enhanced user experience, and subtle animations using AOS.
 
 ## Features
-- **Responsive Design:** Ensures an optimal viewing experience across various devices.
-- **Project Showcase:** Highlight my projects with project descriptions, images, and live demos.
-- **Skills Section:** Showcase myskills and proficiency in various technologies.
-- **Contact Form:** An interactive form for visitors to reach out to me.
 
-## Demo
-[https://techbire.github.io/portfolio/](#)
+1. **Fully Responsive Contact Page:**
+   - Integration with Formspree for easy form submissions.
+   - User-friendly design for seamless interaction on various devices.
 
-## Installation
-To run the Portfolio Website locally, follow these steps:
-1. Clone the repository: `git clone https://github.com/your-username/portfolio-website.git`
-2. Navigate to the project directory: `cd portfolio-website`
-3. Open `index.html` in your preferred web browser.
+2. **Dark Mode:**
+   - Eye-friendly dark mode for improved readability.
+   - Toggle between light and dark modes easily.
+
+3. **Animations using AOS:**
+   - Subtle animations enhance the user experience.
+   - Smooth animations on key elements for engagement.
+
+## Getting Started
+
+To view this website locally or contribute to the project, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/techbire/portfolio.git
+   ```
+
+2. Open the `index.html` file in your preferred web browser.
 
 ## Usage
-1. Customize the content in `index.html` to include your personal information, projects, and skills.
-2. Modify the styles in the `css` folder to match your preferred visual design.
-4. Add your own images to the `img` folder for project showcases.
-5. Test the contact form by integrating it with your preferred backend service.
 
+- Explore the various sections of the website to learn more about my skills and projects.
+- Use the contact page to get in touch with me. The form is integrated with Formspree for easy communication.
 
+## Screenshots
 
-## License
-This project is licensed under the [MIT License](LICENSE).
+Include screenshots showcasing different sections and features of your website.
 
+## Acknowledgments
 
-Feel free to customize this template based on your project's specific details, add or remove sections as needed, and provide accurate links and information. Make sure to replace the placeholders with your actual project details.
+- AOS Library: [Animate On Scroll Library](https://github.com/michalsnik/aos)
+- Formspree: [Formspree](https://formspree.io/)
+
+## Contact
+
+For any inquiries or feedback, feel free to reach out to me at anshtechnical@gmail.com
+
+---
+
+```
