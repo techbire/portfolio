@@ -70,126 +70,288 @@
         </div>
     </section>
 
-    
-    <!-- About section -->
-    <section class="about" id="about">
-        <div class="about-img"data-aos="fade-left">
-            <img src="assets/x.jpg" alt="">
-        </div>
 
-        <div class="about-content"data-aos="slide-left">
-            <h2 class="heading">About <span>Me</span></h2>
-            <p>I possess expertise as a Web Developer and have a deep enthusiasm for technology
-                that are both aesthetically pleasing and highly functional.
-            I am an expert in designing user-friendly and attractive interfaces. I am
-            proficient in a range of programming language including Python and C++. And have
-            experience with clients across a variety of industries.</p>
-           
-            <div class="tab-titles"data-aos="fade-left">
-            <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-            <p class="tab-links"onclick="opentab('education')">Education</p>
-            <p class="tab-links"onclick="opentab('certification')">Certification</p>
-        </div>
-     
-        <div class="tab-contents active-tab" id="experience">
-            <ul>
-                <li><span>Dailyhunt</span><br>Tech Content Writer<br>2020-2021</li>
-                <li><span>Techbire</span><br>Founder | Blogger<br>2017-2020</li>
-      
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create three equal columns that float next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Style for certification list */
+        .column ul {
+          list-style: none;
+          padding: 0;
+        }
+        
+        .column li {
+          padding: 15px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        } 
+        
+        .column a {
+          color: #007BFF;
+          text-decoration: none;
+        }
+        
+        .column a:hover {
+          text-decoration: underline;
+        }
+        </style>
 
-        </div>
-        <div class="tab-contents" id="education">
-            <ul>
-                <li><span>2023-Present</span><br>Lovely Professional University <br>Phagwara, Punjab</li>
-
-        </div>
-        <div class="tab-contents" id="certification">
-            <ul>
-                <li><span>Google</span><br>Crash Course on Python<br>Issued Oct 2023</li>
-                <li><span>freeCodeCamp</span><br>Responsive Web Design<br>Issued Sep 2023</li>
- 
-                
-            
-        </div>
-    </section>
-   
-    <!-- Skills section -->
-  
-    <section id="skills" class="services">
-        <div class="ser-title">
-            <h2 class="heading">My <span>Skills</span></h2>
-        </div>       
-        <div class="services-box" data-aos="fade-left">
-        <div class="box"data-aos="fade-left">            
-              <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Languages &nbsp; &nbsp;</h2>
-               <div>
-                 <figure class="item" style="display:inline-block;">
-                   <a href="https://www.cprogramming.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/c.svg" alt="c" width="40" height="40" /> </a>
-                   <figcaption style="text-align:center;"><b>C</b></figcaption>
-                 </figure>
-                 &nbsp; &nbsp; &nbsp; &nbsp;
-                 <figure class="item" style="display:inline-block;">
-                   <a href="https://www.cplusplus.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/cplusplus.svg" alt="cplusplus" width="40" height="40" /> </a>
-                   <figcaption style="text-align:center;"><b>C++</b></figcaption>
-                 </figure>
-                 &nbsp; &nbsp; &nbsp; &nbsp;
-       
-                 
-                 <figure class="item" style="display:inline-block;">
-                   <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40" /> </a>
-                   <figcaption style="text-align:center;"><b>Python</b></figcaption>
-                 </figure>
-                 &nbsp; &nbsp; &nbsp; &nbsp;
-       
-       
-                 <figure class="item" style="display:inline-block;">
-                   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" /> </a>
-                   <figcaption style="text-align:center;"><b>JavaScript</b></figcaption>
-                 </figure>
-                 &nbsp; &nbsp; &nbsp; &nbsp;
+        
+        <!-- About section -->
+        <section class="about" id="about">
+            <div class="about-img" data-aos="fade-left">
+                <img src="assets/x.jpg" alt="">
+            </div>
+        
+            <div class="about-content" data-aos="slide-left">
+                <h2 class="heading">About <span>Me</span></h2>
+                <p>I possess expertise as a Web Developer and have a deep enthusiasm for technology
+                    that are both aesthetically pleasing and highly functional.
+                    I am an expert in designing user-friendly and attractive interfaces. I am
+                    proficient in a range of programming language including Python and C++. And have
+                    experience with clients across a variety of industries.</p>
+        
+                <div class="tab-titles" data-aos="fade-left">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certification')">Certification</p>
                 </div>
-               </div>
-       
-               <div class="box"data-aos="slide-right">
-                 <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Technologies &nbsp; &nbsp;</h2>
-       
-               
-                 
-                 <figure class="item" style="display:inline-block;">
-                   <a href="https://git-scm.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/git.svg" alt="git" width="40" height="40" /> </a>
-                   <figcaption style="text-align:center;"><b>Git</b></figcaption>
-                 </figure>
-                 &nbsp; &nbsp; &nbsp; &nbsp;
-       
-                 
-                 <figure class="item" style="display:inline-block;">
-                   <a href="https://www.linux.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40" /> </a>
-                   <figcaption style="text-align:center;"><b>Linux</b></figcaption>
-                 </figure>
-                 &nbsp; &nbsp; &nbsp; &nbsp;
-               </div>
-       
-       
-               <div class="box"data-aos="fade-left">
-                   <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Libraries &nbsp; &nbsp;</h2>     
-                
-                
-                 
-                 <figure class="item" style="display:inline-block;">
-                   <a href="https://numpy.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/numpy.svg" alt="numpy" width="40" height="40" /> </a>
-                   <figcaption style="text-align:center;"><b>NumPy</b></figcaption>
-                 </figure>
-                 &nbsp; &nbsp; &nbsp; &nbsp;
-                 
-                 <figure class="item" style="display:inline-block;">
-                   <a href="https://pandas.pydata.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40" /> </a>
-                   <figcaption style="text-align:center;"><b>Pandas</b></figcaption>
-                 </figure>
-                 &nbsp; &nbsp; &nbsp; &nbsp;
-               </div>
-          </section>
-          <!-- ======= End Skills Section ======= -->
-    
+        
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>Headstarter AI</span><br>Software Engineering Fellow<br>Jul 2024 - Present</li>
+                        <li><span>GirlScript Summer of Code 2024</span><br>Contributor<br>Apr 2024 - Aug 2024</li>
+                        <li><span>Dailyhunt</span><br>Content Writer<br>May 2020 - Mar 2021</li>
+                        <li><span>Techbire</span><br>Founder<br>Nov 2017 - May 2020</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-Present</span><br>Lovely Professional University <br>Phagwara, Punjab</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certification">
+                    <div class="row">
+                        <div class="column">
+                            <ul>
+                                <li>
+                                    <span>freeCodeCamp</span><br>
+                                    Responsive Web Design<br>
+                                    Issued Sep 2023<br>
+                                    <a href="https://freecodecamp.org/certification/techbire/responsive-web-design" target="_blank">Certificate</a>
+                                </li>
+                                <li>
+                                    <span>Great Learning</span><br>
+                                    SQL for Data Science<br>
+                                    Issued Feb 2024<br>
+                                    <a href="https://d9jmtjs5r4cgq.cloudfront.net/ComplementaryCourseCertificate/4194139/original/ANSH_GUPTA20240219-69-mc1g9u.jpg" target="_blank">Certificate</a>
+                                </li>
+                                <li>
+                                    <span>AGI Scholars</span><br>
+                                    Generative AI Foundations Course<br>
+                                    Issued Mar 2024<br>
+                                    <a href="https://credsverse.com/credentials/76ac01cf-47aa-41d3-8332-0df17f556416" target="_blank">Certificate</a>
+                                </li>
+                                <li>
+                                    <span>University of Minnesota</span><br>
+                                    Software Development Processes and Methodologies<br>
+                                    Issued Apr 2024<br>
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/HNFFLD5P2ZVF" target="_blank">Certificate</a>
+                                </li>
+                                <li>
+                                    <span>Accenture</span><br>
+                                    Accenture Nordics - Developer Job Simulation<br>
+                                    Issued May 2024<br>
+                                    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20Nordics/PxenP4rHNE6Bh4nQz_Accenture%20Nordics_5GsrbeBuftQm2Mdfp_1715528011313_completion_certificate.pdf" target="_blank">Certificate</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li>
+                                    <span>Google</span><br>
+                                    Crash Course on Python<br>
+                                    Issued Oct 2023<br>
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/QMEZ4XFD33ZX" target="_blank">Certificate</a>
+                                </li>
+                                <li>
+                                    <span>University of California, Santa Cruz</span><br>
+                                    C for Everyone: Programming Fundamentals<br>
+                                    Issued Feb 2024<br>
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/TFL723YYRPD2" target="_blank">Certificate</a>
+                                </li>
+                                <li>
+                                    <span>PW Skills</span><br>
+                                    Decode DSA with C++<br>
+                                    Issued Mar 2024<br>
+                                    <a href="https://pwskills.com/learn/certificate/8c5bddcf-fa9e-4785-9735-2de3bd2e9d30/" target="_blank">Certificate</a>
+                                </li>
+                                <li>
+                                    <span>freeCodeCamp</span><br>
+                                    Data Analysis with Python<br>
+                                    Issued Apr 2024<br>
+                                    <a href="https://www.freecodecamp.org/certification/techbire/data-analysis-with-python-v7" target="_blank">Certificate</a>
+                                </li>
+                                <li>
+                                    <span>Amazon Web Services (AWS)</span><br>
+                                    AWS Summit India 2024<br>
+                                    Issued May 2024<br>
+                                    <a href="https://drive.google.com/file/d/1gWe6mfohMic0mTMFo0JwsQV967tO9Vkg/view?usp=sharing" target="_blank">Certificate</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li>
+                                    <span>META</span><br>
+                                    Introduction to Front-End Development<br>
+                                    Issued Jan 2024<br>
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/5DH2HCXXRWU9" target="_blank">Certificate</a>
+                                </li>
+                                <li>
+                                    <span>Division of Student Welfare - LPU</span><br>
+                                    HackWithVertos - 24 Hour Hackathon<br>
+                                    Issued Mar 2024<br>
+                                    <a href="https://drive.google.com/file/d/1d6EkiAEvWOEu5NiXw3JC7kab7q2_HeKG/view?usp=sharing" target="_blank">Certificate</a>
+                                </li>
+                                <li>
+                                    <span>HKUST</span><br>
+                                    Software Engineering: Implementation and Testing<br>
+                                    Issued Apr 2024<br>
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/NXSP4AQ5R2LW" target="_blank">Certificate</a>
+                                </li>
+                                <li>
+                                    <span>iamneo (Formerly Examly)</span><br>
+                                    Computer Programming<br>
+                                    Issued May 2024<br>
+                                    <a href="https://lpucolab438.examly.io/certificate/U2FsdGVkX1%2FEeVfvMytV5MbK8rrh1Govg9xDvit1ebU%3D" target="_blank">Certificate</a>
+                                </li>
+                               
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- about section ends -->
+
+
+
+<!-- Skills section -->
+<section id="skills" class="services">
+    <div class="ser-title">
+        <h2 class="heading">My <span>Skills</span></h2>
+    </div>       
+    <div class="services-box" data-aos="fade-left">
+        <div class="box" data-aos="fade-left">            
+            <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Languages &nbsp; &nbsp;</h2>
+            <div>
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://www.cprogramming.com" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/c.svg" alt="c" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>C</b></figcaption>
+                </figure>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://www.cplusplus.com" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/cplusplus.svg" alt="cplusplus" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>C++</b></figcaption>
+                </figure>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://www.python.org" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>Python</b></figcaption>
+                </figure>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>JavaScript</b></figcaption>
+                </figure>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <figure class="item" style="display:inline-block;">
+                    <a href="https://www.mysql.com" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40" />
+                    </a>
+                    <figcaption style="text-align:center;"><b>MySQL</b></figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="box" data-aos="slide-right">
+            <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Technologies &nbsp; &nbsp;</h2>
+            <figure class="item" style="display:inline-block;">
+                <a href="https://git-scm.com" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/git.svg" alt="git" width="40" height="40" />
+                </a>
+                <figcaption style="text-align:center;"><b>Git</b></figcaption>
+            </figure>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <figure class="item" style="display:inline-block;">
+                <a href="https://www.linux.org" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40" />
+                </a>
+                <figcaption style="text-align:center;"><b>Linux</b></figcaption>
+            </figure>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <figure class="item" style="display:inline-block;">
+                <a href="https://cloud.google.com" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" alt="googlecloud" width="40" height="40" />
+                </a>
+                <figcaption style="text-align:center;"><b>Google Cloud Platform</b></figcaption>
+            </figure>
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Libraries &nbsp; &nbsp;</h2>
+            <figure class="item" style="display:inline-block;">
+                <a href="https://numpy.org" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/numpy.svg" alt="numpy" width="40" height="40" />
+                </a>
+                <figcaption style="text-align:center;"><b>NumPy</b></figcaption>
+            </figure>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <figure class="item" style="display:inline-block;">
+                <a href="https://pandas.pydata.org" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40" />
+                </a>
+                <figcaption style="text-align:center;"><b>Pandas</b></figcaption>
+            </figure>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <figure class="item" style="display:inline-block;">
+                <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" width="40" height="40" />
+                </a>
+                <figcaption style="text-align:center;"><b>Node.js</b></figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+<!-- ======= End Skills Section ======= -->
     
 
     <!-- projects section -->
@@ -235,11 +397,6 @@
             </form>
 
         </section>    
-
-
- 
-
-        
 
 <!--Footer section -->
     <footer class="footer">
