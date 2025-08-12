@@ -123,7 +123,7 @@
     { company:'Headstarter AI', position:'Software Engineering Fellow', duration:'Jul 2024 - Sep 2024', location:'Remote', description:'Developed AI-driven applications within 7 weeks, securing a top 1% rank on the fellowship leaderboard. Followed agile methodology with weekly sprints and CI/CD practices for efficient delivery. Built a dynamic flashcard SaaS product using Gemini LLM, integrated Clerk, and gained 100+ views.'},
     { company:'GirlScript Summer of Code 2024', position:'Contributor', duration:'Apr 2024 - Aug 2024', location:'Remote', description:'Selected as a Contributor from among 30,000 registrations, placing in the top 300 on the leaderboard. Contributed to open-source projects and gained hands-on experience with collaborative development.'},
     { company:'Dailyhunt', position:'Content Writer', duration:'May 2020 - Mar 2021', location:'Remote', description:'Produced quality and engaging tech content for Dailyhunt platform. Gained over 7,000 followers in less than four months. Created content focused on technology trends and innovations.'},
-    { company:'TechBire', position:'Founder', duration:'Nov 2017 - May 2020', location:'Punjab, India', description:'Founded TechBire, a tech blog, and grew it into a monetized platform with 123 posts. Implemented SEO strategies and secured Google AdSense approval. Built 10K+ meaningful connections on LinkedIn through consistent engagement and valuable content.'}
+    { company:'TechBire', position:'Founder | Blogger', duration:'Nov 2017 - May 2020', location:'Remote', description:'Founded TechBire, a tech blog, and grew it into a monetized platform with 123 posts. Implemented SEO strategies and secured Google AdSense approval. Built 10K+ meaningful connections on LinkedIn through consistent engagement and valuable content.'}
   ];
   const list = document.getElementById('experience-list');
   data.forEach(exp=>{
@@ -446,3 +446,4 @@
   
   sections.forEach(section => observer.observe(section));
 })();
+
