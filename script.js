@@ -154,7 +154,7 @@
   projects.forEach(p=>{
     const card = document.createElement('div');
     card.className='project-card';
-    card.innerHTML = `<div class='project-image-wrapper'><a href='${p.liveLink}' target='_blank'><img src='${p.image}' alt='${p.title}' /></a></div><div class='project-header'><a class='title-link' href='${p.liveLink}' target='_blank'>${p.title}</a><a class='github' href='${p.githubLink}' target='_blank' aria-label='GitHub repository'><i class='fab fa-github' aria-hidden='true'></i><span class='sr-only'>GitHub</span></a></div><div class='project-desc'>${p.description}</div><div class='project-tags'>${p.tags.map(t=>`<span class='project-tag'>${t}</span>`).join('')}</div>`;
+  card.innerHTML = `<div class='project-image-wrapper'><a href='${p.liveLink}' target='_blank'><img src='${p.image}' alt='${p.title}' loading='lazy' /></a></div><div class='project-header'><a class='title-link' href='${p.liveLink}' target='_blank'>${p.title}</a><a class='github' href='${p.githubLink}' target='_blank' aria-label='GitHub repository'><i class='fab fa-github' aria-hidden='true'></i><span class='sr-only'>GitHub</span></a></div><div class='project-desc'>${p.description}</div><div class='project-tags'>${p.tags.map(t=>`<span class='project-tag'>${t}</span>`).join('')}</div>`;
     grid.appendChild(card);
   });
 })();// Footer Links
