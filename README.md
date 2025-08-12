@@ -1,63 +1,106 @@
-# Ansh's Portfolio Website
+# Ansh Gupta (techbire) – Developer Portfolio
 
-![DAY-MODE](assets/Screenshot-day.png)
-![NIGHT-MODE](assets/Screenshot-night.png)
+![Portfolio Screenshot](assets/ss.png "Ansh Gupta Portfolio Screenshot")
 
-[Watch the project demo on YouTube](https://www.youtube.com/watch?v=cmkO_rFmAUk)
+A fast, single‑page personal developer portfolio highlighting projects, skills, experience, open‑source contributions, and achievements. Built with vanilla HTML, CSS, and JavaScript (no heavy frameworks) and optimized for SEO + performance.
 
-## Overview
+## 🚀 Features
+- Responsive design with animated hero & morphing text
+- Liquid crystal style navigation + mobile hamburger menu (< 786px)
+- Interactive wobble / parallax cards
+- Dynamic population of sections (projects, skills, experience, certifications, publications, hackathons)
+- Lazy‑loaded images & minified assets (`styles.min.css`, `script.min.js`)
+- SEO ready: meta tags, Open Graph, Twitter Card, JSON‑LD Person schema
+- Accessibility: semantic structure, alt text, focusable navigation
+- Sitemap + robots.txt
+- Preloaded hero background for faster Largest Contentful Paint
 
-Welcome to my personal portfolio website repository! This project is a showcase of my skills and projects, built using HTML, CSS, and JavaScript. It features a fully responsive contact page with Formspree integration, a dark mode for enhanced user experience, and subtle animations using AOS.
+## 🛠 Tech Stack
+- HTML5, CSS3 (custom), Vanilla JavaScript (ES6 IIFE modules style)
+- No build tooling required
+- Font Awesome (CDN), Google Fonts (DM Sans, Inter)
 
-## Features
+## 📂 Project Structure
+```
+index.html
+styles.css          (unminified source)
+styles.min.css      (production)
+script.js           (unminified source)
+script.min.js       (production)
+robots.txt
+sitemap.xml
+assets/
+  favicon.ico
+  ss.png            (screenshot / social preview)
+  noise.webp        (overlay texture)
+  images/           (project & decorative images)
+```
 
-1. **Fully Responsive Contact Page:**
-   - Integration with Formspree for easy form submissions.
-   - User-friendly design for seamless interaction on various devices.
+## 🔍 SEO / Metadata Implemented
+- `<meta name="description">` + focused keyword set (including: Ansh Gupta Ballia, Ansh Gupta LPU, techbire)
+- Canonical URL: `https://techbire.github.io/`
+- Open Graph + Twitter card (summary large image)
+- JSON‑LD `Person` schema with `alternateName` variants
+- `robots.txt` + `sitemap.xml`
+- Preload: hero background image
 
-2. **Dark Mode:**
-   - Eye-friendly dark mode for improved readability.
-   - Toggle between light and dark modes easily.
+If deployed under a subpath (not username.github.io), update these in `index.html`:
+- Canonical, `og:url`, `twitter:url`, JSON‑LD `url` & `image` paths
 
-3. **Animations using AOS:**
-   - Subtle animations enhance the user experience.
-   - Smooth animations on key elements for engagement.
+## ⚡ Performance Enhancements
+- Minified CSS & JS
+- Defer script loading
+- Lazy loading for non‑critical images
+- Reduced DOM layout thrash (single pass dynamic injections)
+- Blend modes + small texture (noise.webp) for aesthetic without large images
 
-## Getting Started
+## 🧪 Suggested Lighthouse Targets (Post‑Deploy)
+| Category | Target |
+|----------|--------|
+| Performance | 90+ |
+| Accessibility | 90+ |
+| Best Practices | 100 |
+| SEO | 100 |
 
-To view this website locally or contribute to the project, follow these steps:
+Minor improvements (optional):
+- Add `lang` attribute already present (en)
+- Serve images in WebP (some already are) & add width/height for CLS prevention
+- Add Service Worker for PWA (optional)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/techbire/portfolio.git
-   ```
+## ▶ Local Preview
+Just open `index.html` in a browser. (For correct font / icon loading via some browsers’ CORS policies, a lightweight static server is recommended.)
 
-2. Open the `index.html` file in your preferred web browser.
+Python quick serve (choose one):
+```bash
+# Python 3
+python -m http.server 8080
+```
+Then visit: http://localhost:8080
 
-## Usage
+## 🗺 Deployment (GitHub Pages)
+1. Create (or use) repo, push all files to `main`.
+2. If you name the repo `techbire.github.io`, site auto‑deploys at root.
+3. Otherwise: Settings → Pages → Deploy from Branch → `main` / root.
+4. Wait a minute, verify URLs & social cards via Twitter / Open Graph debugger.
+5. (Optional) Submit sitemap to Google Search Console.
 
-- Explore the various sections of the website to learn more about my skills and projects.
-- Use the contact page to get in touch with me. The form is integrated with Formspree for easy communication.
+## 🔄 Updating Content
+- Add / edit projects: modify the `projects` array in `script.js` (and rebuild minified file if you want to replace `script.min.js`).
+- Skills / Experience / Certifications / Publications / Hackathons all come from arrays in `script.js`.
+- About section: edit HTML in `index.html` (`#about`).
 
-## Screenshots
+## 🧩 Contributing
+Personal site – PRs usually closed unless discussed. Feel free to fork and adapt for your own portfolio (please replace content & images).
 
-Include screenshots showcasing different sections and features of your website.
+## 📜 License
+All original content (text, images branded to Ansh Gupta / techbire) is © Ansh Gupta. Code portions may be reused with attribution. Do **not** reuse personal images or proprietary logos without permission.
 
-## Acknowledgments
+## 📫 Contact
+- Portfolio: https://techbire.github.io/
+- GitHub: https://github.com/techbire
+- LinkedIn: https://www.linkedin.com/in/techbire/
+- X (Twitter): https://x.com/techbire
+- Email: anshtechnical@gmail.com
 
-- AOS Library: [Animate On Scroll Library](https://github.com/michalsnik/aos)
-- Formspree: [Formspree](https://formspree.io/)
-
-## Contact
-
-For any inquiries or feedback, feel free to reach out to me at anshtechnical@gmail.com
-
-
-
-
-
-
-
-
-
-
+---
+If you’d like a PWA upgrade / Service Worker or a dark–light theme toggle, open an issue or reach out.

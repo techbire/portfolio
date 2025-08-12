@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://techbire.github.io/sitemap.xml

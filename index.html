@@ -1,419 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ansh's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ansh Gupta - Portfolio</title>
+  <link rel="preload" as="image" href="assets/images/background.jpg" />
+  <!-- Primary SEO Meta Tags -->
+  <meta name="title" content="Ansh Gupta - Software Developer Portfolio" />
+  <meta name="description" content="Ansh Gupta – B.Tech CSE student, full-stack & AI-driven app developer. Top 1% Headstarter Fellow. Open-source contributor (GirlScript Summer of Code). Projects in React, Next.js, TypeScript, Python, and more." />
+  <meta name="keywords" content="Ansh Gupta, techbire, Ansh Gupta Ballia, Ansh Gupta LPU, ansh gupta techbire, software developer, full stack developer, React, Next.js, TypeScript, Python, C++, portfolio, open source, Headstarter, GirlScript Summer of Code" />
+  <meta name="author" content="Ansh Gupta" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://techbire.github.io/" />
+  <meta name="theme-color" content="#0e0e0e" />
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/png" href="assets/ss.png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="assets/ss.png" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://techbire.github.io/" />
+  <meta property="og:title" content="Ansh Gupta - Software Developer Portfolio" />
+  <meta property="og:description" content="Full-stack & AI-focused developer | Top 1% Headstarter Fellow | Open Source Contributor | Building performant, user-focused products." />
+  <meta property="og:image" content="assets/ss.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://techbire.github.io/" />
+  <meta property="twitter:title" content="Ansh Gupta - Software Developer Portfolio" />
+  <meta property="twitter:description" content="Full-stack & AI-focused developer | Top 1% Headstarter Fellow | Open Source Contributor." />
+  <meta property="twitter:image" content="assets/ss.png" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ansh Gupta",
+  "alternateName": ["techbire","Ansh Gupta Ballia","Ansh Gupta LPU","ansh gupta techbire"],
+    "url": "https://techbire.github.io/",
+    "image": "https://techbire.github.io/assets/ss.png",
+    "jobTitle": "Software Developer",
+    "description": "Full-stack & AI-focused developer. Top 1% Headstarter Fellow. Open source contributor (GirlScript Summer of Code). Projects in React, Next.js, TypeScript, Python, C++.",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Lovely Professional University" },
+    "sameAs": [
+      "https://github.com/techbire",
+      "https://www.linkedin.com/in/techbire/",
+      "https://x.com/techbire",
+      "https://www.techbire.blogspot.com"
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons (no SRI to avoid hash mismatch when opened via file://) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="styles.min.css" />
 </head>
 <body>
-
-    <!--  Header -->
-    <header class="header">
-        <a href="https://bit.ly/m/techbire" class="logo">techbire</a>
-
-        <i class="bx bx-menu" id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="https://www.techbire.blogspot.com">Blog</a>
-            <img src="assets/moon.png" id="icon">
-        </nav>
-
-
-
-    </header>
-    
-
-    <!-- home section -->
-    <section class="home" id="home">
-        <div class="home-content" data-aos="fade-down">
-    
-            <h1>Hello, I’m <span>Ansh</span></h1>
-            <title>Text Typing Effect</title>
-<body>
-  <div id="text-container" class="border"></div>
-</body>
-<br>
-<br>
-            <p>
-
-                I am working on developing professional and visually engaging web solutions, leveraging my strong programming skills in Python and C++. I have completed some impactful tech projects while also nurturing my passion for technology that began in 7th grade. Currently pursuing a B.Tech in CSE at Lovely Professional University, I am open to exciting opportunities in professional projects, research, and connecting with industry professionals. 
-            </p>
-
-            <div class="social-media">
-                <a href="https://github.com/techbire"><i class="fa-brands fa-github"></i></i></a>
-                <a href="https://www.linkedin.com/in/techbire/"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://www.facebook.com/techbire"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/techbire"><i class='fab fa-instagram'></i></a>
-                <a href="https://www.x.com/techbire"><i class='bx bxl-twitter'></i></a>
-                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=anshtechnical@gmail.com"><i class='bx bx-envelope' ></i>
-            </div>
-
-            <div class="btn-container">
-                    <a href="assets/Resume-Ansh-Gupta.pdf" class="btn" id="download-btn">Download CV</a>
-                    <a href="#contact" class="btn" id="hire-me-btn">Hire Me</a>
-
-            </div>
-        </div>
-
-        <div class="home-img"data-aos="fade-down">
-            <img src="assets/pic1.png" alt="">
-        </div>
-    </section>
-
-
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        /* Create three equal columns that float next to each other */
-        .column {
-          float: left;
-          width: 33.33%;
-          padding: 10px;
-        }
-        
-        /* Clear floats after the columns */
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        
-        /* Style for certification list */
-        .column ul {
-          list-style: none;
-          padding: 0;
-        }
-        
-        .column li {
-          padding: 15px;
-          margin-bottom: 10px;
-          border-radius: 5px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        } 
-        
-        .column a {
-          color: #007BFF;
-          text-decoration: none;
-        }
-        
-        .column a:hover {
-          text-decoration: underline;
-        }
-        </style>
-
-        
-        <!-- About section -->
-        <section class="about" id="about">
-            <div class="about-img" data-aos="fade-left">
-                <img src="assets/x.jpg" alt="">
-            </div>
-        
-            <div class="about-content" data-aos="slide-left">
-                <h2 class="heading">About <span>Me</span></h2>
-                <p>I possess expertise as a Web Developer and have a deep enthusiasm for technology
-                    that are both aesthetically pleasing and highly functional.
-                    I am an expert in designing user-friendly and attractive interfaces. I am
-                    proficient in a range of programming language including Python and C++. And have
-                    experience with clients across a variety of industries.</p>
-        
-                <div class="tab-titles" data-aos="fade-left">
-                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('certification')">Certification</p>
-                </div>
-        
-                <div class="tab-contents active-tab" id="experience">
-                    <ul>
-                        <li><span>Headstarter AI</span><br>Software Engineering Fellow<br>Jul 2024 - Present</li>
-                        <li><span>GirlScript Summer of Code 2024</span><br>Contributor<br>Apr 2024 - Aug 2024</li>
-                        <li><span>Dailyhunt</span><br>Content Writer<br>May 2020 - Mar 2021</li>
-                        <li><span>Techbire</span><br>Founder<br>Nov 2017 - May 2020</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2023-Present</span><br>Lovely Professional University <br>Phagwara, Punjab</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="certification">
-                    <div class="row">
-                        <div class="column">
-                            <ul>
-                                <li>
-                                    <span>freeCodeCamp</span><br>
-                                    Responsive Web Design<br>
-                                    Issued Sep 2023<br>
-                                    <a href="https://freecodecamp.org/certification/techbire/responsive-web-design" target="_blank">Certificate</a>
-                                </li>
-                                <li>
-                                    <span>Great Learning</span><br>
-                                    SQL for Data Science<br>
-                                    Issued Feb 2024<br>
-                                    <a href="https://d9jmtjs5r4cgq.cloudfront.net/ComplementaryCourseCertificate/4194139/original/ANSH_GUPTA20240219-69-mc1g9u.jpg" target="_blank">Certificate</a>
-                                </li>
-                                <li>
-                                    <span>AGI Scholars</span><br>
-                                    Generative AI Foundations Course<br>
-                                    Issued Mar 2024<br>
-                                    <a href="https://credsverse.com/credentials/76ac01cf-47aa-41d3-8332-0df17f556416" target="_blank">Certificate</a>
-                                </li>
-                                <li>
-                                    <span>University of Minnesota</span><br>
-                                    Software Development Processes and Methodologies<br>
-                                    Issued Apr 2024<br>
-                                    <a href="https://www.coursera.org/account/accomplishments/verify/HNFFLD5P2ZVF" target="_blank">Certificate</a>
-                                </li>
-                                <li>
-                                    <span>Accenture</span><br>
-                                    Accenture Nordics - Developer Job Simulation<br>
-                                    Issued May 2024<br>
-                                    <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20Nordics/PxenP4rHNE6Bh4nQz_Accenture%20Nordics_5GsrbeBuftQm2Mdfp_1715528011313_completion_certificate.pdf" target="_blank">Certificate</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <ul>
-                                <li>
-                                    <span>Google</span><br>
-                                    Crash Course on Python<br>
-                                    Issued Oct 2023<br>
-                                    <a href="https://www.coursera.org/account/accomplishments/verify/QMEZ4XFD33ZX" target="_blank">Certificate</a>
-                                </li>
-                                <li>
-                                    <span>University of California, Santa Cruz</span><br>
-                                    C for Everyone: Programming Fundamentals<br>
-                                    Issued Feb 2024<br>
-                                    <a href="https://www.coursera.org/account/accomplishments/verify/TFL723YYRPD2" target="_blank">Certificate</a>
-                                </li>
-                                <li>
-                                    <span>PW Skills</span><br>
-                                    Decode DSA with C++<br>
-                                    Issued Mar 2024<br>
-                                    <a href="https://pwskills.com/learn/certificate/8c5bddcf-fa9e-4785-9735-2de3bd2e9d30/" target="_blank">Certificate</a>
-                                </li>
-                                <li>
-                                    <span>freeCodeCamp</span><br>
-                                    Data Analysis with Python<br>
-                                    Issued Apr 2024<br>
-                                    <a href="https://www.freecodecamp.org/certification/techbire/data-analysis-with-python-v7" target="_blank">Certificate</a>
-                                </li>
-                                <li>
-                                    <span>Amazon Web Services (AWS)</span><br>
-                                    AWS Summit India 2024<br>
-                                    Issued May 2024<br>
-                                    <a href="https://drive.google.com/file/d/1gWe6mfohMic0mTMFo0JwsQV967tO9Vkg/view?usp=sharing" target="_blank">Certificate</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <ul>
-                                <li>
-                                    <span>META</span><br>
-                                    Introduction to Front-End Development<br>
-                                    Issued Jan 2024<br>
-                                    <a href="https://www.coursera.org/account/accomplishments/verify/5DH2HCXXRWU9" target="_blank">Certificate</a>
-                                </li>
-                                <li>
-                                    <span>Division of Student Welfare - LPU</span><br>
-                                    HackWithVertos - 24 Hour Hackathon<br>
-                                    Issued Mar 2024<br>
-                                    <a href="https://drive.google.com/file/d/1d6EkiAEvWOEu5NiXw3JC7kab7q2_HeKG/view?usp=sharing" target="_blank">Certificate</a>
-                                </li>
-                                <li>
-                                    <span>HKUST</span><br>
-                                    Software Engineering: Implementation and Testing<br>
-                                    Issued Apr 2024<br>
-                                    <a href="https://www.coursera.org/account/accomplishments/verify/NXSP4AQ5R2LW" target="_blank">Certificate</a>
-                                </li>
-                                <li>
-                                    <span>iamneo (Formerly Examly)</span><br>
-                                    Computer Programming<br>
-                                    Issued May 2024<br>
-                                    <a href="https://lpucolab438.examly.io/certificate/U2FsdGVkX1%2FEeVfvMytV5MbK8rrh1Govg9xDvit1ebU%3D" target="_blank">Certificate</a>
-                                </li>
-                               
-                                
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- about section ends -->
-
-
-
-<!-- Skills section -->
-<section id="skills" class="services">
-    <div class="ser-title">
-        <h2 class="heading">My <span>Skills</span></h2>
-    </div>       
-    <div class="services-box" data-aos="fade-left">
-        <div class="box" data-aos="fade-left">            
-            <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Languages &nbsp; &nbsp;</h2>
-            <div>
-                <figure class="item" style="display:inline-block;">
-                    <a href="https://www.cprogramming.com" target="_blank" rel="noreferrer">
-                        <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/c.svg" alt="c" width="40" height="40" />
-                    </a>
-                    <figcaption style="text-align:center;"><b>C</b></figcaption>
-                </figure>
-                &nbsp; &nbsp; &nbsp; &nbsp;
-                <figure class="item" style="display:inline-block;">
-                    <a href="https://www.cplusplus.com" target="_blank" rel="noreferrer">
-                        <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/cplusplus.svg" alt="cplusplus" width="40" height="40" />
-                    </a>
-                    <figcaption style="text-align:center;"><b>C++</b></figcaption>
-                </figure>
-                &nbsp; &nbsp; &nbsp; &nbsp;
-                <figure class="item" style="display:inline-block;">
-                    <a href="https://www.python.org" target="_blank" rel="noreferrer">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40" />
-                    </a>
-                    <figcaption style="text-align:center;"><b>Python</b></figcaption>
-                </figure>
-                &nbsp; &nbsp; &nbsp; &nbsp;
-                <figure class="item" style="display:inline-block;">
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" />
-                    </a>
-                    <figcaption style="text-align:center;"><b>JavaScript</b></figcaption>
-                </figure>
-                &nbsp; &nbsp; &nbsp; &nbsp;
-                <figure class="item" style="display:inline-block;">
-                    <a href="https://www.mysql.com" target="_blank" rel="noreferrer">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40" />
-                    </a>
-                    <figcaption style="text-align:center;"><b>MySQL</b></figcaption>
-                </figure>
-            </div>
-        </div>
-
-        <div class="box" data-aos="slide-right">
-            <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Technologies &nbsp; &nbsp;</h2>
-            <figure class="item" style="display:inline-block;">
-                <a href="https://git-scm.com" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/git.svg" alt="git" width="40" height="40" />
-                </a>
-                <figcaption style="text-align:center;"><b>Git</b></figcaption>
-            </figure>
-            &nbsp; &nbsp; &nbsp; &nbsp;
-            <figure class="item" style="display:inline-block;">
-                <a href="https://www.linux.org" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40" />
-                </a>
-                <figcaption style="text-align:center;"><b>Linux</b></figcaption>
-            </figure>
-            &nbsp; &nbsp; &nbsp; &nbsp;
-            <figure class="item" style="display:inline-block;">
-                <a href="https://cloud.google.com" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" alt="googlecloud" width="40" height="40" />
-                </a>
-                <figcaption style="text-align:center;"><b>Google Cloud Platform</b></figcaption>
-            </figure>
-        </div>
-
-        <div class="box" data-aos="fade-left">
-            <h2 style="text-align:left;font-size:x-large;color:#fd4766;">Libraries &nbsp; &nbsp;</h2>
-            <figure class="item" style="display:inline-block;">
-                <a href="https://numpy.org" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/arasgungore/arasgungore/main/icons/numpy.svg" alt="numpy" width="40" height="40" />
-                </a>
-                <figcaption style="text-align:center;"><b>NumPy</b></figcaption>
-            </figure>
-            &nbsp; &nbsp; &nbsp; &nbsp;
-            <figure class="item" style="display:inline-block;">
-                <a href="https://pandas.pydata.org" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40" />
-                </a>
-                <figcaption style="text-align:center;"><b>Pandas</b></figcaption>
-            </figure>
-            &nbsp; &nbsp; &nbsp; &nbsp;
-            <figure class="item" style="display:inline-block;">
-                <a href="https://nodejs.org" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" width="40" height="40" />
-                </a>
-                <figcaption style="text-align:center;"><b>Node.js</b></figcaption>
-            </figure>
-        </div>
+  <header id="hero" class="hero-section zoom-125">
+  <img src="assets/images/background.jpg" alt="Abstract geometric background" class="hero-bg" />
+    <div class="resume-btn-wrapper">
+  <a href="https://drive.google.com/file/d/16pLPF77arjCOxc8ab0LYKDV2L10G5kv7/view" target="_blank" rel="noopener" class="resume-btn"> <span class="icon">⬇</span> View Resume</a>
     </div>
-</section>
-<!-- ======= End Skills Section ======= -->
-    
+    <div class="floating-images">
+  <img src="assets/images/emojistar.png" alt="Decorative star illustration" class="float star" loading="lazy" />
+  <img src="assets/images/pyramid.png" alt="Decorative pyramid graphic" class="float pyramid" loading="lazy" />
+  <img src="assets/images/cube-helix.png" alt="Decorative helix graphic" class="float helix" loading="lazy" />
+    </div>
+    <div class="grid-beam"></div>
+  <div class="hero-content">
+      <h1 class="title">Ansh Gupta</h1>
+      <div class="morphing-text" id="morphing-text">
+        <span class="text1"></span>
+        <span class="text2"></span>
+        <svg id="filters" class="hidden" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <filter id="threshold">
+              <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 255 -140" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <div class="socials">
+  <a href="https://github.com/techbire" target="_blank" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
+  <a href="https://www.linkedin.com/in/techbire/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+  <a href="mailto:anshtechnical@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll Down">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" class="bg-neutral-800 rounded-full animate-bounce w-8 h-8 p-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+      </svg>
+    </a>
+  </header>
 
-    <!-- projects section -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Last <span>Projects</span></h2>
-        <div class="portfolio-container" data-aos="fade-right">
-    
-            <div class="portfolio-card">
-                
-                <img  src="assets/project1.png" alt="" >
-                <div class="portfolio-details"data-aos="fade-right">
-                <h3>AGRICULTURE- <span>WEBSITE</span></h3>
-                <p>The Sustainable Agriculture Planner is a website using HTML, CSS and JS. It is designed to support sustainable farming practices. It provides a comprehensive set of features to assist farmers and stakeholders in planning, managing resources efficiently, and promoting sustainable agricultural development.</p>
-                </div>
-                <a href="https://github.com/techbire/agriculture-html" class="btn" >View Project</a>
-            </div>
+  <nav class="liquid-nav">
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-container">
+      <a href="#hero" class="nav-item">Home</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#certifications" class="nav-item">Certifications</a>
+      <a href="#publications" class="nav-item">Research</a>
+      <a href="#hackathons" class="nav-item">Hackathons</a>
+      <a href="#contact" class="nav-item">Contact</a>
+      <div class="nav-indicator"></div>
+    </div>
+  </nav>
 
-            <div class="portfolio-card">
-                
-               <img src="assets/project2.png" alt="" data-aos="fade-left">
-                <div class="portfolio-details"data-aos="fade-left">
-                <h3>KBC: THE QUIZ <span>GAME</span></h3>
-                <p>Successfully completed the KBC: The Quiz Game project, infused with Amitabh Bachchan Sir's voice. This project showcases a wide range of Python's topics, including lists, conditionals, functions, and the Pygame library. The incorporation of Amitabh Bachchan's voice adds an engaging and authentic touch to the game, making it a standout creation.</p>
-                </div>
-                <a href="https://github.com/techbire/kbc" class="btn">View Project</a>
-            </div>
-        </div>
+  <main>
+    <section id="about" class="section about">
+      <div class="wobble-card" data-wobble>
+        <div class="noise"></div>
+        <h2>About Me</h2>
+        <p>
+          From a young age, I’ve been captivated by technology—curiosity that began in childhood when I started exploring how things work and eventually led me to create my own tech blog, <b>TechBire</b>, in 2017. What started as a hobby quickly grew into a monetized platform with <b>123+ posts</b>, Google AdSense approval, and a thriving reader base. This early passion shaped my journey into computer science and innovation.
+          <br><br>
+          I am currently Pre-Final Year <b>B.Tech in Computer Science at Lovely Professional University</b>, maintaining a <b>7.7 CGPA</b>. My academic journey is complemented by hands-on experience in software development, problem-solving, and building impactful projects. From developing full-stack platforms like the <b>FlavorShare Recipe Platform</b>, <b>AI Flashcard Wizard SaaS</b>, and <b>Personal Library Tracker</b> to contributing to open-source initiatives like <b>GirlScript Summer of Code</b>, I focus on creating solutions that combine functionality with a seamless user experience.
+          <br><br>
+          Beyond academics, I’ve achieved milestones such as securing a <b>Top 1% rank in the Headstarter Software Engineering Fellowship</b>, building <b>10K+ professional connections on LinkedIn</b>, and producing tech content for <b>Dailyhunt</b>, attracting <b>7,000+ followers</b> in under four months. My participation in events like <b>The Arcade by Google Cloud</b> and <b>Flipkart GRiD 6.0</b> reflects my active engagement in the tech community.
+        </p>
+      </div>
     </section>
 
-        <!-- contact info section -->
-        <section class="contact" id="contact">
-            <h2 class="heading"> Contact <span>Me <i class='bx bx-message-dots'></i></span></h2>
-
-            <form action="https://formspree.io/f/mqkvvpjv"
-            method="POST">
-                <div class="input-box">
-                    <input type="text" name="Name" placeholder="Full Name">
-                    <input type="email" name="Email" placeholder="Email Address">
-                </div>
-                
-                <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
-
-        </section>    
-
-<!--Footer section -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Made with <i style="color: red;" class="bx bx-heart"></i> by Ansh Gupta copyright &copy; 2023 | All Rights Reserved.</p>
+    <section id="skills" class="section skills">
+      <div class="skills-inner">
+        <div class="skills-left">
+          <h2>Skills</h2>
+          <div class="skill-badges" id="skill-badges"></div>
         </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        <div class="skills-right">
+          <div id="icon-circle" class="icon-circle" aria-label="Tech Logos"></div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-   
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <section id="experience" class="section experience">
+      <h2>Experience</h2>
+      <div class="experience-items" id="experience-list"></div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <section id="certifications" class="section certifications">
+      <h2>Certifications</h2>
+      <div class="certifications-list" id="certifications-list"></div>
+    </section>
+
+    <section id="publications" class="section publications">
+      <h2>Publications</h2>
+      <div class="publications-list" id="publications-list"></div>
+    </section>
+
+    <section id="hackathons" class="section hackathons">
+      <h2>Hackathons & Contributions</h2>
+      <div class="hackathons-list" id="hackathons-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <h3><span class="link-icon">🔗</span> Connect with me</h3>
+      <ul class="social-links" id="footer-links"></ul>
+    </div>
+  </footer>
+
+  <script src="script.min.js" defer></script>
 </body>
 </html>
