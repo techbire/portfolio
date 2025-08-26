@@ -26,95 +26,156 @@
   if(el1 && el2) animate();
 })();
 
-// Skills Badges
+// Skills Badges with Categories - Tabbed Interface
 (function(){
-  const skills = [
-    { name:'React', color:'#06b6d4', icon:'fab fa-react'},
-    { name:'Next.js', color:'#10b981', icon:'fas fa-code'},
-    { name:'JavaScript', color:'#eab308', icon:'fab fa-js'},
-    { name:'Typescript', color:'#2563eb', icon:'fas fa-file-code'},
-    { name:'Express.js', color:'#6366f1', icon:'fas fa-server'},
-    { name:'Node.js', color:'#22c55e', icon:'fab fa-node-js'},
-  { name:'MySQL', color:'#f59e0b', icon:'fas fa-database'},
-    { name:'Tailwind CSS', color:'#34d399', icon:'fas fa-wind'},
-    { name:'PostgreSQL', color:'#0ea5e9', icon:'fas fa-database'},
-    { name:'Prisma', color:'#db2777', icon:'fas fa-gem'},
-    { name:'MongoDB', color:'#16a34a', icon:'fas fa-leaf'},
-  { name:'Firebase', color:'#fbbf24', icon:'fas fa-fire'},
-  { name:'SQLite', color:'#3b82f6', icon:'fas fa-database'},
-    { name:'C', color:'#8b5cf6', icon:'fas fa-code'},
-    { name:'C++', color:'#ef4444', icon:'fas fa-code'},
-    { name:'Python', color:'#0891b2', icon:'fab fa-python'},
-  { name:'Streamlit', color:'#f472b6', icon:'fas fa-stream'},
-  { name:'Pygame', color:'#3b82f6', icon:'fas fa-gamepad'},
-    { name:'Framer Motion', color:'#a855f7', icon:'fas fa-film'},
-    { name:'shadcn/ui', color:'#9ca3af', icon:'fas fa-layer-group'},
-    { name:'Git', color:'#f59e0b', icon:'fab fa-git-alt'},
-  { name:'GitHub', color:'#ffffff', icon:'fab fa-github'},
-  { name:'Docker', color:'#2563eb', icon:'fab fa-docker'},
-  { name:'Figma', color:'#a855f7', icon:'fab fa-figma'},
-  { name:'Postman', color:'#fb923c', icon:'fas fa-paper-plane'}
-  ];
+  const skillCategories = {
+    'Programming Languages': [
+      { name:'C++', color:'#ef4444', icon:'fas fa-code'},
+      { name:'Python', color:'#0891b2', icon:'fab fa-python'},
+      { name:'Java', color:'#f89820', icon:'fab fa-java'},
+      { name:'JavaScript', color:'#eab308', icon:'fab fa-js'},
+      { name:'TypeScript', color:'#2563eb', icon:'fas fa-file-code'},
+      { name:'SQL', color:'#336791', icon:'fas fa-database'}
+    ],
+    'Frontend Development': [
+      { name:'React.js', color:'#06b6d4', icon:'fab fa-react'},
+      { name:'Next.js', color:'#10b981', icon:'fas fa-code'},
+      { name:'Vue.js', color:'#4fc08d', icon:'fab fa-vuejs'},
+      { name:'Tailwind CSS', color:'#34d399', icon:'fas fa-wind'},
+      { name:'Material-UI', color:'#0081cb', icon:'fas fa-layer-group'},
+      { name:'Radix UI', color:'#9ca3af', icon:'fas fa-layer-group'},
+      { name:'Bootstrap', color:'#7952b3', icon:'fab fa-bootstrap'},
+      { name:'HTML5 / CSS3', color:'#e34c26', icon:'fab fa-html5'}
+    ],
+    'Backend Development': [
+      { name:'Node.js', color:'#22c55e', icon:'fab fa-node-js'},
+      { name:'Express.js', color:'#6366f1', icon:'fas fa-server'},
+      { name:'FastAPI', color:'#009688', icon:'fas fa-bolt'},
+      { name:'REST API', color:'#ff6b6b', icon:'fas fa-api'},
+      { name:'JWT', color:'#000000', icon:'fas fa-key'},
+      { name:'Clerk', color:'#6c5ce7', icon:'fas fa-shield-alt'}
+    ],
+    'Databases': [
+      { name:'MongoDB', color:'#16a34a', icon:'fas fa-leaf'},
+      { name:'MySQL', color:'#f59e0b', icon:'fas fa-database'},
+      { name:'PostgreSQL', color:'#0ea5e9', icon:'fas fa-database'},
+      { name:'Firebase', color:'#fbbf24', icon:'fas fa-fire'},
+      { name:'SQLite', color:'#3b82f6', icon:'fas fa-database'}
+    ],
+    'AI / LLM Tools': [
+      { name:'Google Gemini', color:'#4285f4', icon:'fas fa-brain'},
+      { name:'OpenAI API', color:'#00a67e', icon:'fas fa-robot'},
+      { name:'Prompt Engineering', color:'#ff6b6b', icon:'fas fa-comments'},
+      { name:'RAG', color:'#9b59b6', icon:'fas fa-search'},
+      { name:'LangChain', color:'#2c3e50', icon:'fas fa-link'}
+    ],
+    'Cloud & DevOps': [
+      { name:'Google Cloud', color:'#4285f4', icon:'fab fa-google'},
+      { name:'Docker', color:'#2563eb', icon:'fab fa-docker'},
+      { name:'GitHub Actions', color:'#2088ff', icon:'fab fa-github'}
+    ],
+    'Tools & Platforms': [
+      { name:'Git', color:'#f59e0b', icon:'fab fa-git-alt'},
+      { name:'GitHub', color:'#ffffff', icon:'fab fa-github'},
+      { name:'VS Code', color:'#0078d4', icon:'fas fa-code'},
+      { name:'Postman', color:'#fb923c', icon:'fas fa-paper-plane'},
+      { name:'Figma', color:'#a855f7', icon:'fab fa-figma'},
+      { name:'Canva', color:'#00c4cc', icon:'fas fa-palette'}
+    ],
+    'Other Technical Skills': [
+      { name:'DSA', color:'#8b5cf6', icon:'fas fa-sitemap'},
+      { name:'Pygame', color:'#3b82f6', icon:'fas fa-gamepad'},
+      { name:'SEO & Blogging', color:'#e74c3c', icon:'fas fa-blog'}
+    ]
+  };
+
   const container = document.getElementById('skill-badges');
   if(!container) return;
-  skills.forEach(s=>{
-    const badge = document.createElement('div');
-    badge.className='skill-badge';
-    badge.innerHTML = `<span class=\"dot\" style=\"background:${s.color}\"></span><i class=\"${s.icon}\" aria-hidden=\"true\"></i><span>${s.name}</span>`;
-    container.appendChild(badge);
+  
+  // Clear existing content
+  container.innerHTML = '';
+  
+  // Create tabs container
+  const tabsContainer = document.createElement('div');
+  tabsContainer.className = 'skill-tabs';
+  
+  // Create content container
+  const contentContainer = document.createElement('div');
+  contentContainer.className = 'skill-content';
+  
+  // Create tabs and content for each category
+  const categoryNames = Object.keys(skillCategories);
+  let activeCategory = categoryNames[0]; // Set first category as default active
+  let hoverTimeout; // For hover delay
+  
+  categoryNames.forEach((category, index) => {
+    // Create tab button
+    const tabButton = document.createElement('button');
+    tabButton.className = `skill-tab ${index === 0 ? 'active' : ''}`;
+    tabButton.textContent = category;
+    tabButton.setAttribute('data-category', category);
+    
+    // Add click event
+    tabButton.addEventListener('click', () => {
+      // Clear any pending hover timeout
+      clearTimeout(hoverTimeout);
+      // Remove active class from all tabs
+      document.querySelectorAll('.skill-tab').forEach(tab => tab.classList.remove('active'));
+      // Add active class to clicked tab
+      tabButton.classList.add('active');
+      // Show corresponding skills
+      showSkills(category);
+      // Update active category
+      activeCategory = category;
+    });
+    
+    // Add hover event to show skills on hover with slight delay
+    tabButton.addEventListener('mouseenter', () => {
+      clearTimeout(hoverTimeout);
+      hoverTimeout = setTimeout(() => {
+        showSkills(category);
+      }, 150); // 150ms delay for smoother experience
+    });
+    
+    // Add mouse leave event to return to active category
+    tabButton.addEventListener('mouseleave', () => {
+      clearTimeout(hoverTimeout);
+      hoverTimeout = setTimeout(() => {
+        showSkills(activeCategory);
+      }, 100); // Shorter delay for leaving
+    });
+    
+    tabsContainer.appendChild(tabButton);
   });
-})();
-
-// Rotating Icon Circle (replaces old canvas cloud)
-(function(){
-  const circle = document.getElementById('icon-circle');
-  if(!circle) return;
-  const techs = [
-    { label:'C', icon:'', color:'#8b5cf6' },
-    { label:'C++', icon:'', color:'#ef4444' },
-    { label:'Python', icon:'fab fa-python', color:'#0891b2' },
-    { label:'JavaScript', icon:'fab fa-js', color:'#eab308' },
-    { label:'MySQL', icon:'fas fa-database', color:'#f59e0b' },
-    { label:'Node.js', icon:'fab fa-node-js', color:'#22c55e' },
-    { label:'React', icon:'fab fa-react', color:'#06b6d4' },
-    { label:'Next.js', icon:'fas fa-code', color:'#10b981' },
-    { label:'Pygame', icon:'fas fa-gamepad', color:'#3b82f6' },
-    { label:'PostgreSQL', icon:'fas fa-database', color:'#0ea5e9' },
-    { label:'Firebase', icon:'fas fa-fire', color:'#fbbf24' },
-    { label:'SQLite', icon:'fas fa-database', color:'#3b82f6' },
-    { label:'Git', icon:'fab fa-git-alt', color:'#f59e0b' },
-    { label:'GitHub', icon:'fab fa-github', color:'#ffffff' },
-    { label:'Docker', icon:'fab fa-docker', color:'#2563eb' },
-    { label:'Figma', icon:'fab fa-figma', color:'#a855f7' },
-    { label:'Postman', icon:'fas fa-paper-plane', color:'#fb923c' }
-  ];
-  const radius = 140; // px
-  const center = { x: circle.clientWidth/2, y: circle.clientHeight/2 };
-  techs.forEach((t,i)=>{
-    const angle = (Math.PI * 2 / techs.length) * i;
-    const x = center.x + Math.cos(angle) * radius;
-    const y = center.y + Math.sin(angle) * radius * 0.65; // ellipse for perspective
-    const wrapper = document.createElement('div');
-    wrapper.className = 'icon-item';
-    wrapper.style.left = x + 'px';
-    wrapper.style.top = y + 'px';
-  // Color removed for monochrome aesthetic; CSS handles grayscale and hover reveal.
-    if(t.icon){
-      const iEl = document.createElement('i');
-      iEl.className = t.icon;
-      iEl.setAttribute('title', t.label);
-      wrapper.appendChild(iEl);
-    } else {
-      const span = document.createElement('span');
-      span.textContent = t.label;
-      span.style.fontSize = '0.8rem';
-      span.style.fontWeight = '700';
-      wrapper.appendChild(span);
-    }
-    circle.appendChild(wrapper);
-  });
-  // Wrap in a rotating container
-  circle.classList.add('rotate');
+  
+  // Function to show skills for a category
+  function showSkills(category) {
+    contentContainer.innerHTML = '';
+    const skills = skillCategories[category];
+    
+    const skillsGrid = document.createElement('div');
+    skillsGrid.className = 'skills-grid';
+    
+    skills.forEach(skill => {
+      const skillBadge = document.createElement('div');
+      skillBadge.className = 'skill-badge';
+      skillBadge.innerHTML = `
+        <span class="dot" style="background:${skill.color}"></span>
+        <i class="${skill.icon}" aria-hidden="true"></i>
+        <span>${skill.name}</span>
+      `;
+      skillsGrid.appendChild(skillBadge);
+    });
+    
+    contentContainer.appendChild(skillsGrid);
+  }
+  
+  // Add containers to main container
+  container.appendChild(tabsContainer);
+  container.appendChild(contentContainer);
+  
+  // Show first category by default
+  showSkills(activeCategory);
 })();
 
 // Experience

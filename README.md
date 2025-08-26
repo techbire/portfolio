@@ -24,9 +24,7 @@ A fast, single‑page personal developer portfolio highlighting projects, skills
 ```
 index.html
 styles.css          (unminified source)
-styles.min.css      (production)
 script.js           (unminified source)
-script.min.js       (production)
 robots.txt
 sitemap.xml
 assets/
