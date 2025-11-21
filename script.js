@@ -181,6 +181,7 @@
 // Experience
 (function(){
   const data = [
+    { company:'Valnee Solutions', position:'Software Developer Intern', duration:'Sep 2024 - Nov 2024', location:'Remote', description:'Worked across full-stack engineering, AI pipelines, payments, and SaaS architecture, contributing end-to-end to SignalMint, Valnee.com, and GhostWriter AI. Delivered features like Razorpay billing, responsive redesigns, and an advanced RAG-powered LinkedIn automation system used in production.'},
     { company:'Headstarter AI', position:'Software Engineering Fellow', duration:'Jul 2024 - Sep 2024', location:'Remote', description:'Developed AI-driven applications within 7 weeks, securing a top 1% rank on the fellowship leaderboard. Followed agile methodology with weekly sprints and CI/CD practices for efficient delivery. Built a dynamic flashcard SaaS product using Gemini LLM, integrated Clerk, and gained 100+ views.'},
     { company:'GirlScript Summer of Code 2024', position:'Contributor', duration:'Apr 2024 - Aug 2024', location:'Remote', description:'Selected as a Contributor from among 30,000 registrations, placing in the top 300 on the leaderboard. Contributed to open-source projects and gained hands-on experience with collaborative development.'},
     { company:'Dailyhunt', position:'Content Writer', duration:'May 2020 - Mar 2021', location:'Remote', description:'Produced quality and engaging tech content for Dailyhunt platform. Gained over 7,000 followers in less than four months. Created content focused on technology trends and innovations.'},
@@ -199,6 +200,9 @@
 // Projects
 (function(){
   const projects = [
+    { title:'GhostWriter AI', description:'Implemented a complete RAG pipeline with web scraping, multi-source LLM context, and Google-grounded research while building core features like the dashboard, post-creation flow, credit system, and onboarding, developing two versions of the carousel generator (V1 image-first with Gemini Nano-Banana, V2 text-first with dynamic PNG rendering), adding image-styling tools and templates, and integrating the official LinkedIn Connect API for direct post scheduling and publishing.', image:'assets/images/ghostwriter.png', liveLink:'https://ghost-writter-ai-kappa.vercel.app/', githubLink:'https://github.com/techbire/Ghost_Writter_AI', tags:['React','Next.js','RAG Pipeline','LLM','Web Scraping','LinkedIn API','AI Content Generation','Carousel Generator','Google Gemini','Deep Research','Automation'] },
+    { title:'SignalMint', description:'Built and integrated a subscription + recurring billing system using Razorpay and Supabase. Implemented 48-hour signed media URL caching, reducing redundant API calls and improving page load performance by ~40%. Added Pro status hooks, scheduler logic, and autopay (beta) while also improving UX stability by fixing caching issues, enhancing responsiveness, and refining key interaction flows.', image:'assets/images/signalmint.png', liveLink:'https://www.signalmint.in/', githubLink:'https://www.signalmint.in/', tags:['React','Next.js','Razorpay','Supabase','Subscription Billing','Media Caching','Performance Optimization','Autopay','Scheduler','UX Design'] },
+    { title:'Valnee.com', description:'Implemented full responsive redesign across all breakpoints (mobile/tablet/desktop). Added major pages including Legal, FAQ, Meet the Founder, Case Studies, and improved hero/blog UI with animations. Integrated Supabase for dynamic case study fetching and improved page readability across the site.', image:'assets/images/valnee.png', liveLink:'https://www.valnee.com/', githubLink:'https://www.valnee.com/', tags:['React','Next.js','Responsive Design','Supabase','UI/UX','Animations','Dynamic Content','Multi-page Development'] },
     { title:'BloomCart E-Commerce Platform', description:'Built a premium full-stack plant e-commerce app with advanced search, filtering, cart functionality, admin tools, Razorpay payments, image sourcing via Google Images API, and secure RESTful APIs', image:'assets/images/bloomcart.png', liveLink:'https://bloomcart-wheat.vercel.app/', githubLink:'https://github.com/techbire/bloomcart', tags:['React','Node.js','Express','MongoDB','Razorpay','REST API','Joi Validation','Google Images API','Responsive Design','SEO','Security','Full Stack'] },
     { title:'FlavorShare Recipe Platform', description:'Developed a full-stack recipe-sharing web application with secure user authentication, allowing users to create accounts, upload their own recipes with images, and browse community submissions. Implemented dynamic recipe discovery with category filtering, Get Featured, and a 5-star rating for user feedback.', image:'assets/images/flavorshare.png', liveLink:'https://flavorshare.rf.gd/', githubLink:'https://github.com/techbire/flavorshare', tags:['PHP','JavaScript','MySQL','TailwindCSS','Authentication','File Upload'] },
     { title:'AI Flashcard Wizard SaaS', description:'Built a full-stack AI-driven flashcard platform that converts any text into smart study cards using Google Gemini and integrated payment method using Razorpay gateway with Basic and Pro subscription tiers. Implemented comprehensive flashcard management system with CRUD operations.', image:'assets/images/flashcard.png', liveLink:'https://ai-flashcard-wizard-saas.vercel.app/', githubLink:'https://github.com/techbire/ai-flashcard-wizard', tags:['Next.js','TypeScript','Clerk','Razorpay','Google Gemini','Firebase Firestore','Tailwind CSS'] },
@@ -217,7 +221,7 @@
   projects.forEach(p=>{
     const card = document.createElement('div');
     card.className='project-card';
-  card.innerHTML = `<div class='project-image-wrapper'><a href='${p.liveLink}' target='_blank'><img src='${p.image}' alt='${p.title}' loading='lazy' /></a></div><div class='project-header'><a class='title-link' href='${p.liveLink}' target='_blank'>${p.title}</a><a class='github' href='${p.githubLink}' target='_blank' aria-label='GitHub repository'><i class='fab fa-github' aria-hidden='true'></i><span class='sr-only'>GitHub</span></a></div><div class='project-desc'>${p.description}</div><div class='project-tags'>${p.tags.map(t=>`<span class='project-tag'>${t}</span>`).join('')}</div>`;
+  card.innerHTML = `<div class='project-image-wrapper'><a href='${p.liveLink}' target='_blank'><img src='${p.image}' alt='${p.title}' loading='lazy' /></a></div><div class='project-header'><a class='title-link' href='${p.liveLink}' target='_blank'>${p.title}</a><div class='project-header-links'><a class='live-btn' href='${p.liveLink}' target='_blank' aria-label='View Live Project'><i class='fas fa-external-link-alt' aria-hidden='true'></i> Live</a><a class='github' href='${p.githubLink}' target='_blank' aria-label='GitHub repository'><i class='fab fa-github' aria-hidden='true'></i><span class='sr-only'>GitHub</span></a></div></div><div class='project-desc'>${p.description}</div><div class='project-tags'>${p.tags.map(t=>`<span class='project-tag'>${t}</span>`).join('')}</div>`;
     grid.appendChild(card);
   });
 })();// Footer Links
@@ -273,6 +277,16 @@
 (function(){
   const certifications = [
     { 
+      title: 'Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate', 
+      issuer: 'Oracle', 
+      link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=3516D31EC2E9D181E6BC040747E65405727233324D507C5DB42195B7F93449E8' 
+    },
+    { 
+      title: 'Oracle Cloud Infrastructure 2025 Certified Developer Professional', 
+      issuer: 'Oracle', 
+      link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=3516D31EC2E9D181E6BC040747E65405727233324D507C5DB42195B7F93449E8' 
+    },
+    { 
       title: 'Software Development Processes and Methodologies', 
       issuer: 'University of Minnesota', 
       link: 'https://www.coursera.org/account/accomplishments/verify/HNFFLD5P2ZVF' 
@@ -281,16 +295,6 @@
       title: 'Flipkart GRiD 6.0 - Software Development Track', 
       issuer: 'Unstop & Flipkart', 
       link: 'https://unstop.com/certificate-preview/8b95ec58-bf11-4ed7-996a-e3ab2030d937?utm_campaign=' 
-    },
-    { 
-      title: 'The Complete Full-Stack Web Development Bootcamp', 
-      issuer: 'Udemy', 
-      link: 'https://www.udemy.com/certificate/UC-689dfc8f-b3bb-49c4-9189-60ce0933f7fc/' 
-    },
-    { 
-      title: 'Postman API Fundamentals Student Expert', 
-      issuer: 'Postman', 
-      link: 'https://badgr.com/public/assertions/FYLLcM86QRiih7ld41kEiQ?identity__email=anshg470@gmail.com' 
     },
     { 
       title: 'Decode DSA with C++', 
@@ -487,6 +491,11 @@
   
   // Intersection Observer for active states
   const sections = document.querySelectorAll('section[id], header[id]');
+  const observerOptions = {
+    threshold: 0.3,
+    rootMargin: '-20% 0px -20% 0px'
+  };
+  
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -505,7 +514,7 @@
         }
       }
     });
-  }, { threshold: 0.3 });
+  }, observerOptions);
   
   sections.forEach(section => observer.observe(section));
 })();
