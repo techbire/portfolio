@@ -277,14 +277,14 @@
 (function(){
   const certifications = [
     { 
-      title: 'Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate', 
-      issuer: 'Oracle', 
-      link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=3516D31EC2E9D181E6BC040747E65405727233324D507C5DB42195B7F93449E8' 
-    },
-    { 
       title: 'Oracle Cloud Infrastructure 2025 Certified Developer Professional', 
       issuer: 'Oracle', 
       link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=3516D31EC2E9D181E6BC040747E65405727233324D507C5DB42195B7F93449E8' 
+    },
+      { 
+      title: 'OCI 2025 Certified AI Foundations Associate', 
+      issuer: 'Oracle', 
+      link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=F3BB594A589F187068A27CEB8AFBB7AD36C73D2C497225C822A574CD8E9163AF' 
     },
     { 
       title: 'Software Development Processes and Methodologies', 
